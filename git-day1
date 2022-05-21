@@ -1,0 +1,78 @@
+    0  sudo su -
+    1  vim /etc/ssh/sshd_config
+    2  systemctl restart sshd
+    3  passwd root
+    4  vim /etc/ssh/sshd_config
+    5  passwd ec2-user
+    6  exit
+    7  git --version
+    8  cat /etc/os-release
+    9  yum update
+   10  yum install git -y
+   11  git --version
+   12  ls
+   13  pwd
+   14  mkdir project1
+   15  ls
+   16  cd project1/
+   17  ls
+   18  ls -a
+   19  git init
+   20  ls -a
+   21  ls
+   22  ls .git/
+   23  ls
+   24  vim test.txt
+   25  cd /tmp/
+   26  ls
+   27  vim test.txt
+   28  cd -
+   29  ls
+   30  git status
+   31  git add test.txt
+   32  git status
+   33  git commit -m "test.txt file is created with hello"
+   34  git status
+   35  ls
+   36  cat test.txt
+   37  git ls-files
+   38  vim login.java
+   39  ls
+   40  git status
+   41  ls
+   42  git ls-files
+   43  rm login.java
+   44  git ls-files
+   45  git status
+   46  ls
+   47  git ls-files
+   48  vim test.txt
+   49  git status
+   50  git add test.txt
+   51  git status
+   52  git commit -m "modified test file with some changes"
+   53  git status
+   54  git log
+   55  git log --oneline
+   56  git show c0d5988
+   57  git ls-files
+   58  cat test.txt
+   59  history
+   60  vim test.txt
+   61  git status
+   62  git commit -a -m "modified some syntax"
+   63  git log
+   64  git log --oneline
+   65  git show 7a97472
+   66  git config --global --edit
+   67  git config --global user.name sandip
+   68  git config --global user.email sandip@gmail.com
+   69  vim login.java
+   70  ls
+   71  git ls-files
+   72  git status
+   73  git commit -a -m "added login file"
+   74  git add login.java
+   75  git commit -m "added login file"
+   76  git log
+   77  history
