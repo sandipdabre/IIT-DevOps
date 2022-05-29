@@ -1,0 +1,18 @@
+Question: -
+
+warning: LF will be replaced by CRLF in file.
+
+LF stands for Line Feed which is a way to represent the end of a line in UNIX-based systems. 
+But in a Windows-based system, a line is usually expressed by CR (Carriage Return) and a line feed (LF).
+
+This problem arises if you use UNIX based system (macOS) to push code, the code will have an LF ending.
+
+If you use a windows machine, make modifications to the code, and do commit, 
+it will be replaced by CRLF since git is smart and does not expect you to use LF on Windows OS.
+
+Similarly, the opposite happens if the warning says, CRLF will be replaced by LF. 
+You will lose windows based CRLF after commit/checkout, and LF will replace it.
+
+
+Use Command:
+git config core.autocrlf true
