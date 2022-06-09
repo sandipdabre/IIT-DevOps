@@ -1,0 +1,26 @@
+Admin@DESKTOP- MINGW64 ~/Desktop/sandipproject (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Admin@DESKTOP- MINGW64 ~/Desktop/sandipproject (master)
+$ vim sandip
+
+Admin@DESKTOP- MINGW64 ~/Desktop/sandipproject (master)
+$ git add sandip
+warning: LF will be replaced by CRLF in sandip.
+The file will have its original line endings in your working directory
+
+Admin@DESKTOP- MINGW64 ~/Desktop/sandipproject (master)
+$ git config core.autocrlf true
+
+Admin@DESKTOP- MINGW64 ~/Desktop/sandipproject (master)
+$ git add sandip
+
+Admin@DESKTOP- MINGW64 ~/Desktop/sandipproject (master)
+$ git commit -m "sandip"
+[master (root-commit) e93c8d3] sandip
+ 1 file changed, 2 insertions(+)
+ create mode 100644 sandip
+
+Admin@DESKTOP- MINGW64 ~/Desktop/sandipproject (master)
+$
